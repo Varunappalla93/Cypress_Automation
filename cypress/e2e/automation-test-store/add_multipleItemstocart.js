@@ -2,7 +2,7 @@
 import AutoStore_HairCare_PO from "../../support/pageObjects/automationtest-store/AutoStore_HairCare_PO";
 import AutoStore_HomePage_PO from "../../support/pageObjects/automationtest-store/autostore_homepage_po";
 
-describe("Add multiple items to cart", () => {
+describe("Add multiple items to the cart", () => {
     const autostore_homepage_po = new AutoStore_HomePage_PO()
     const autostore_haircare_po = new AutoStore_HairCare_PO()
 
