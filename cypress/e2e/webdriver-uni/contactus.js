@@ -75,6 +75,13 @@ describe("Test webdriveruni contact us form page", () => {
     });
 
     it.skip("Should not be able to submit form successfully", () => {
+
+        if (Cypress.isBrowser('firefox')) {
+
+        }
+        else {
+            contactus.contactusformsubmission(data.firstname, data.lastname, " ", "How can I learn Cypress?", 'body', "Error")
+        }
         // cy.visit("http://www.webdriveruniversity.com/Contact-Us/contactus.html")
         // cy.get('.feedback-input:nth-child(1)').type("Varun");
         // cy.get('[name="last_name"]').type("blogs");
@@ -115,4 +122,3 @@ describe("Test webdriveruni contact us form page", () => {
 
 // to run tests using config folders.
 // npx cypress run --spec cypress/e2e/webdriver-uni/* --env configFile=staging --headed
-
